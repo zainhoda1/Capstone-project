@@ -28,6 +28,7 @@ df1 <- df1 %>%
 
 df1 <- df1 %>%
   select(player_type, Team, Team_n1, everything())
+write.csv(df1, "Documents/GitHub/Capstone-project/Data folder/final_data_by_player_type.csv")
 
 df_transfer <- df1 %>%
   filter(player_type==0)
