@@ -1,5 +1,6 @@
 library(dplyr)
 library(here)
+library(utils)
 
 data <- read.csv("Documents/GitHub/Capstone-project/Data folder/final_dataset.csv", header=TRUE)
 data2 <- data
@@ -22,12 +23,20 @@ colnames(data2_f) <- cols2
 
 df1 <- cbind(data_f, data2_f)
 
-colnames(df1) <- c("Unnamed_n1", "Player_Name", "season_n1", "Team_n1", "conf_abbr_n1",
-  "games_n1", "games_started_n1", "games_started_n1", "mp_per_g_n1", "fg_per_g_n1", 
-  "fga_per_g_n1", "fg_pct_n1", 
-df2 <- df1 %>%
-  filter(Player.Name...2, season...3, season...162)
+df1 <- df1 %>%
+  mutate(player_type= ifelse(Team==Team_n1, 1, 0))
 
+df1 <- df1 %>%
+  select(player_type, Team, Team_n1, everything())
+
+df_transfer <- df1 %>%
+  filter(player_type==0)
+write.csv(df_transfer, "Documents/GitHub/Capstone-project/Data folder/transfer.csv")
+
+#write.csv(df1,file=here::here("data","hereTest.csv")
+df_nontransfer_returner <- df1 %>%
+  filter(player_type==1)
+write.csv(df_nontransfer_returner, "Documents/GitHub/Capstone-project/Data folder/nontransferreturner.csv")
 
 
 temp <- data %>%
