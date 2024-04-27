@@ -1,6 +1,6 @@
 # Load libraries
 library(tidyverse)
-library(cbcTools)
+#library(cbcTools)
 library(readr)
 library(here)
 library(ggplot2)
@@ -32,11 +32,11 @@ columns_to_use <- c('player_type', 'games', 'games_started', 'mp_per_g', 'fg_per
 
 columns_subset <-  data1[columns_to_use]#%>% sample_n(5)
 #new.dat <- data.frame(speed1)
-results_test_set_CI <-as.data.frame(predict(model.lm, newdata = columns_subset, interval = 'confidence', level = 0.95))
+results_test_set_CI <-as.data.frame(predict(model.lm, newdata = columns_subset, interval = 'confidence', level = 0.65))
 
 results_test_set_CI$actual_value <- data1[c('offence')]
 
-predict(model.lm, newdata = columns_subset, interval = 'prediction', level = 0.95)
+predict(model.lm, newdata = columns_subset, interval = 'prediction', level = 0.65)
 
 glance(model.lm)
 
