@@ -1,0 +1,5 @@
+regression_model,parameter_list,no_of_params
+linear_regression,"['player_type', 'fg3_pct', 'ft_pct', 'sos', 'trb_per_poss', 'ast_per_poss', 'pts_per_poss', 'Ht', 'Calc A2', 'Calc A3', 'Class_n1', 'Year_dif', 'Team_AdjEM_dif', 'KP_Conf_Dif']",14
+ridge_regression,"['player_type', 'fg3_pct', 'ft_pct', 'sos', 'trb_per_poss', 'ast_per_poss', 'pts_per_poss', 'Ht', 'Calc A2', 'Calc A3', 'Class_n1', 'Year_dif', 'Team_AdjEM_dif', 'KP_Conf_Dif']",14
+xg_boost,"['player_type', 'fg3_pct', 'ft_pct', 'sos', 'trb_per_poss', 'ast_per_poss', 'pts_per_poss', 'Ht', 'Calc A2', 'Calc A3', 'Class_n1', 'Year_dif', 'Team_AdjEM_dif', 'KP_Conf_Dif']",14
+lg_boost,"['player_type', 'fg3_pct', 'ft_pct', 'sos', 'trb_per_poss', 'ast_per_poss', 'pts_per_poss', 'Ht', 'Calc A2', 'Calc A3', 'Class_n1', 'Year_dif', 'Team_AdjEM_dif', 'KP_Conf_Dif']",14

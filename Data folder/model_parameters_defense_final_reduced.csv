@@ -1,0 +1,5 @@
+regression_model,parameter_list,no_of_params
+linear_regression,"['player_type', 'Calc B', 'Blk.', 'stl_per_poss', 'def_rtg', 'trb_pct', 'Class_n1', 'Team_AdjEM_dif', 'KP_Conf_Dif', 'dws','Ht', 'DR.']",12
+ridge_regression,"['player_type', 'Calc B', 'Blk.', 'stl_per_poss', 'def_rtg', 'trb_pct', 'Class_n1', 'Team_AdjEM_dif', 'KP_Conf_Dif', 'dws','Ht', 'DR.']",12
+xg_boost,"['player_type', 'Calc B', 'Blk.', 'stl_per_poss', 'def_rtg', 'trb_pct', 'Class_n1', 'Team_AdjEM_dif', 'KP_Conf_Dif', 'dws','Ht', 'DR.']",12
+lg_boost,"['player_type', 'Calc B', 'Blk.', 'stl_per_poss', 'def_rtg', 'trb_pct', 'Class_n1', 'Team_AdjEM_dif', 'KP_Conf_Dif', 'dws','Ht', 'DR.']",12
