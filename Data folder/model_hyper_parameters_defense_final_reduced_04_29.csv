@@ -1,0 +1,6 @@
+model,best_score,best_params
+linear_regression,-341.866078691886,{}
+ridge_regression,-341.8647532178767,{'alpha': 20}
+xg_boost,-343.46520594823676,"{'learning_rate': 0.1, 'max_depth': 2, 'min_child_weight': 0.1, 'subsample': 0.5}"
+lg_boost,-344.30969839559975,"{'max_depth': 4, 'min_data_in_leaf': 100, 'num_leaves': 5}"
+random_forest,-348.39459006070695,"{'max_depth': 8, 'n_estimators': 50}"
